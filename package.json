@@ -61,64 +61,8 @@
 				"command": "fakesharper.reloaddiagnostics",
 				"title": "Reload Diagnostics",
 				"category": "fakesharper"
-			},
-			{
-				"command": "fakesharper.dupfinder.run",
-				"title": "Run Dupfinder",
-				"category": "fakesharper"
-			},
-			{
-				"command": "fakesharper.dupfinder.clean",
-				"title": "Clean Duplicates",
-				"category": "fakesharper"
 			}
-		],
-		"viewsContainers": {
-			"activitybar": [
-				{
-					"id": "fakesharper",
-					"title": "fakesharper",
-					"icon": "resources/icon/csharp.svg"
-				}
-			]
-		},
-		"views": {
-			"fakesharper": [
-				{
-					"id": "dupfinder",
-					"name": "Dupfinder"
-				}
-			]
-		},
-		"menus": {
-			"view/title": [
-				{
-					"command": "fakesharper.dupfinder.run",
-					"when": "view == dupfinder",
-					"group": "dupfinder"
-				},
-				{
-					"command": "fakesharper.dupfinder.clean",
-					"when": "view == dupfinder",
-					"group": "dupfinder"
-				},
-				{
-					"command": "fakesharper.cleanupcode",
-					"when": "view == dupfinder",
-					"group": "cleanupcode"
-				},
-				{
-					"command": "fakesharper.inspectcode",
-					"when": "view == dupfinder",
-					"group": "inspectcode"
-				},
-				{
-					"command": "fakesharper.cleanalldiagnostics",
-					"when": "view == dupfinder",
-					"group": "inspectcode"
-				}
-			]
-		}
+		]
 	},
 	"scripts": {
 		"vscode:prepublish": "yarn run compile",
